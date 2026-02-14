@@ -3,7 +3,7 @@ name: Promote scheduled-updates to live
 on:
   workflow_dispatch:
   schedule:
-    - cron: "49 17 14 2 *"
+    - cron: "57 17 14 2 *"
 
 permissions:
   contents: write
