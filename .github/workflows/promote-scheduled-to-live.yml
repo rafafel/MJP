@@ -1,0 +1,32 @@
+name: Promote scheduled-updates to live
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run every 5 minutes (for testing)
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge scheduled-updates into live
+        run: |
+          git fetch origin
+          git checkout live
+          git merge --no-ff origin/scheduled-updates -m "Scheduled merge"
+          git push origin live
