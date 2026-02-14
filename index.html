@@ -1,0 +1,2441 @@
+
+<!-- V33 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHJONG PALACE NYC</title>
+    <link rel="icon" type="image/svg" href="vector/MP.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const eventsContainer = document.getElementById('EVENTS');
+            const leftButton = document.getElementById('events-scroll-left');
+            const rightButton = document.getElementById('events-scroll-right');
+            
+            function updateScrollButtons() {
+                if (!eventsContainer || !leftButton || !rightButton) return;
+                
+                const scrollLeft = eventsContainer.scrollLeft;
+                const scrollWidth = eventsContainer.scrollWidth;
+                const clientWidth = eventsContainer.clientWidth;
+                
+                // Show left button if we can scroll left
+                if (scrollLeft > 0) {
+                    leftButton.classList.add('show');
+                } else {
+                    leftButton.classList.remove('show');
+                }
+                
+                // Show right button if we can scroll right
+                if (scrollLeft < scrollWidth - clientWidth - 1) {
+                    rightButton.classList.add('show');
+                } else {
+                    rightButton.classList.remove('show');
+                }
+            }
+            
+            // Update buttons on scroll
+            eventsContainer.addEventListener('scroll', updateScrollButtons);
+            
+            // Update buttons on resize
+            window.addEventListener('resize', updateScrollButtons);
+            
+            // Initial check
+            setTimeout(updateScrollButtons, 100);
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <div id="ALL_DESK">
+
+        <div id="LEFT">
+            <div class="TOP" id="LOGO"> 
+                <a href="#EVENTS"><img src="vector/MjPl.svg"></a>  
+            </div>
+            <div class="scroll_txt">
+                <div class="scroll_txt_txt">
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>           
+                </div>
+                <div class="scroll_txt_txt">
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>           
+                </div>
+            </div> <!-- scroll_txt -->
+            <div id="PIC">
+                <img id="random-image" class="cover_img" src="">
+                <div id="about-text" style="display: none;">
+                    <div id="close-about">✕</div>
+                    <div class="about-inner">
+                        <div class="about-text_section">
+                            <div id="STORY">
+                                <div class="about-header"><h2>OUR STORY</h2></div>
+                                <p><i>“I grew up playing mahjong in Singapore, in a home ruled by my formidable grandmother, Dolly. But it was never just about the game. My memories are of balmy evenings, the air thick with the scent of tropical fruit from the garden, mingling with the rich, spicy aromas of Dolly’s Peranakan cooking. Laughter and lively chatter spilled through the house as friends gathered around the mahjong table, the rhythmic clatter of tiles a steady backdrop to gossip shared and stories retold. It was a feeling as much as a memory—of warmth, of belonging, of time slowing down in the company of others.
+                                <br>Now, in NYC, a place I have come to call home, I want to recreate that same magic of bringing people together through mahjong.”</i>
+                                <br><br>-Subhas Kim Kandasamy, Founder of Mahjong Palace.</p> 
+                            </div>
+                            <div id="TTOP">
+                                <div class="about-header"><h2>ABOUT MJP</h2></div>
+                                <p>Founded in NYC in September 2024, Mahjong Palace (MJP) is a social mahjong club that reimagines the mahjong experience. We host engaging  teaching and playing sessions at thoughtfully  selected venues - from art galleries and cultural spaces to restaurants and members-only clubs. 
+                                <br><br>Our booking system is simple and straightforward - tickets can be purchased directly on our webstore and guarantee a seat at a table. A drinks bar and a smorgasboard of Asian snacks and appetizers is offered at each event, along with a curated music playlist that is available for download after the session on Spotify.
+                                <br><br>Our events are designed to cater to mahjong players of all levels.
+                                <br><br>We teach and play Hong Kong–style mahjong, the most widely played version of the game worldwide.
+                                <br><br><br><span class="TH">TEACHING TABLE:</span> Perfect for absolute beginners, Teaching Tables are led by experienced teachers. New players are welcome to book sessions at Teaching Tables as many times as needed to feel confident with the rules and structure of the game.
+                                <br><br>
+                                <span class="OP">OPEN PLAY:</span> Players who are at least comfortable playing Chicken Hand independently are welcome to book a seat at an Open Play Table. We aim to  group participants with others at a similar skill level to ensure a balanced and enjoyable game.
+                                </p>
+                            </div>
+                        </div>    
+                    </div>           
+                </div>
+                <div id="leaderboard-text" style="display: none;">
+                    <div id="close-leaderboard">✕</div>
+                    <div class="leaderboard-inner">
+                        <div class="leaderboard-text_section">
+                            <div id="LEADERBOARD">
+                                <div class="leaderboard-top">
+                                    <div id="leaderboard-title"><h1>LEADERBOARD</h1></div>
+                                    <div id="leaderboard-sections">
+                                        <div id="leaderboard-sections-rank"><p>RANK</p></div>
+                                        <div id="leaderboard-sections-player"><p>PLAYER</p></div>
+                                        <div id="leaderboard-sections-points"><p>POINTS</p></div>
+                                    </div> 
+                                </div>        
+                                <div class="leaderboard-podium rank-1">
+                                    <div class="podium-number"><h1>1</h1></div>
+                                    <div class="podium-person"><h2>James Weinhoff</h2><p class="leaderboard-date">@ MJP 32 - 19 SEPT 2025</p></div>
+                                    <div class="podium-points"><h1>14</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-1">
+                                    <div class="podium-number"><h1>1</h1></div>
+                                    <div class="podium-person"><h2>Lois Aronow</h2><p class="leaderboard-date">@ MJP 42 - 10 DEC 2025</p></div>
+                                    <div class="podium-points"><h1>14</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-2">
+                                    <div class="podium-number"><h1>2</h1></div>
+                                    <div class="podium-person"><h2>Min Liu</h2><p class="leaderboard-date">@ MJP 33 - 23 SEPT 2025</p></div>
+                                    <div class="podium-points"><h1>13</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-3">
+                                    <div class="podium-number"><h1>3</h1></div>
+                                    <div class="podium-person"><h2>Min Liu</h2><p class="leaderboard-date">@ MJP 30 - 03 SEPT 2025</p></div>
+                                    <div class="podium-points"><h1>12</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>4</h1></div>
+                                    <div class="podium-person"><h2>Mati Gibbs</h2><p class="leaderboard-date">@ MJP 13 - 21 FEB 2025</p></div>
+                                    <div class="podium-points"><h1>11</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>4</h1></div>
+                                    <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 38 - 08 NOV 2025</p></div>
+                                    <div class="podium-points"><h1>11</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>4</h1></div>
+                                    <div class="podium-person"><h2>Julia Mattox</h2><p class="leaderboard-date">@ MJP X VIRGINIA CLUB - 19 NOV 2025</p></div>
+                                    <div class="podium-points"><h1>11</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>4</h1></div>
+                                    <div class="podium-person"><h2>Laurin Liu</h2><p class="leaderboard-date">@ MJP 39 - 12 NOV 2025</p></div>
+                                    <div class="podium-points"><h1>11</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>4</h1></div>
+                                    <div class="podium-person"><h2>Nicole Iwata</h2><p class="leaderboard-date">@ MJP 41 - 22 NOV 2025</p></div>
+                                    <div class="podium-points"><h1>11</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Charles Guerrero</h2><p class="leaderboard-date">@ MJP 23 - 25 JUN 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Ellen Korner</h2><p class="leaderboard-date">@ MJP 18 - 25 APR 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 38 - 08 NOV 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 26 - 13 JUL 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 21 - 30 MAY 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Helena Stefanowicz</h2><p class="leaderboard-date">@ MJP 37 - 08 OCT 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Martin Andersson</h2><p class="leaderboard-date">@ MJP 28 - 30 JULY 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div class="leaderboard-podium rank-rest">
+                                    <div class="podium-number"><h1>5</h1></div>
+                                    <div class="podium-person"><h2>Ra Frank</h2><p class="leaderboard-date">@ MJP 18 - 25 APR 2025</p></div>
+                                    <div class="podium-points"><h1>10</h1></div>
+                                </div>
+                                <div id="leaderboard-disclaimer"><p>NOTE: only players scoring 10+ points are shown on the Leaderboard.</p></div>
+                            </div>
+                        </div>    
+                    </div> 
+                </div>
+            </div>   
+            <div id="footer_LX">
+                <a href="https://www.instagram.com/mahjongpalace/" target="_null" id="IG">@mahjongpalace</a>
+                <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#109;&#097;&#104;&#106;&#111;&#110;&#103;&#112;&#097;&#108;&#097;&#099;&#101;&#046;&#110;&#101;&#116;" target="_blank">hello[at]&shy;mahjongpalace.net</a>
+            </div>
+
+        </div> <!-- LEFT -->
+
+
+        <div id="RIGHT">
+            <div id="RIGHT_SHOW">
+                <div class="TOP" id="TOP_RX">
+                    
+                    <div id="ANNOUNCE">
+                        <a id="about-link">[ABOUT]</a>
+                        <a id="leaderboard-link">[LEADERBOARD]</a>
+                     </div>
+                </div> 
+                <div id="EVENTS_padding">
+                    <div id="events-scroll-left" onclick="document.getElementById('EVENTS').scrollBy({left: -400, behavior: 'smooth'})">←</div>
+                    <div id="events-scroll-right" onclick="document.getElementById('EVENTS').scrollBy({left: 400, behavior: 'smooth'})">→</div>
+                    <div id="EVENTS">     
+
+
+
+
+                        <div class="eventB" id="eventB_47">
+                            <div class="DAYB" id="DAYB_4">
+                                <h1>15</h1>
+                                <h2>FEB / SUN</h2>
+                            </div> 
+                            <div class="INFOB" id="INFOB_4">
+                                <div class="TITLEB" id="TITLEB_47">
+                                    <h2>MJP 47</h2>
+                                </div>
+                                <div class="WHENB">
+                                    <p>04-07PM: <span class="TH">TEACHING TABLE</span></p>
+                                    <p>04-07PM: <span class="OP">OPEN PLAY</span></p>
+                                </div>
+                                <div class="WHEREB" id="WHEREB_47">
+                                    <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                                </div>  
+                            </div>
+                            <div class="BOOKB" id="BOOKB_4">
+                                <h2>PRIVATE EVENT</h2>
+                            </div>
+                        </div>
+
+                        <div class="eventB" id="eventB_48">
+                            <div class="DAYB" id="DAYB_3">
+                                <h1>18</h1>
+                                <h2>FEB / WED</h2>
+                            </div> 
+                            <div class="INFOB" id="INFOB_3">
+                                <div class="TITLEB" id="TITLEB_48">
+                                    <h2>MJP 48</h2>
+                                </div>
+                                <div class="WHENB">
+                                    <p>07-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                                    <p>NO TEACHING TABLE</p>
+                                </div>
+                                <div class="WHEREB" id="WHEREB_48">
+                                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                                </div>  
+                            </div>
+                            <a class="BOOKB" id="BOOKB_3" href="https://book.stripe.com/5kQ00i52YgG6c9vbL40VO0X" target="_null"><h2>BOOK: $40</h2></a>
+                        </div>
+
+                        <div class="eventB" id="eventB_49">
+                            <div class="DAYB" id="DAYB_1">
+                                <h1>22</h1>
+                                <h2>FEB / SUN</h2>
+                            </div> 
+                            <div class="INFOB" id="INFOB_1">
+                                <div class="TITLEB" id="TITLEB_49">
+                                    <h2>MJP 49</h2>
+                                </div>
+                                <div class="WHENB">
+                                    <p>03-06PM: <span class="TH">TEACHING TABLE</span></p>
+                                    <p>03-06PM: <span class="OP">OPEN PLAY</span></p>
+                                </div>
+                                <div class="WHEREB" id="WHEREB_49">
+                                    <p><a href="https://www.instagram.com/nineorchard" target="_null">@nineorchard</a> <br>9 Orchard St, New York, NY 10002.</p>
+                                </div>  
+                            </div>
+                            <div class="BOOKB" id="BOOKB_1">
+                                <h2>BOOK: $40</h2>
+                            </div>
+                            <div class="BOOKING_OPTIONS" id="BOOK_OPT_1">
+                                <a href="https://book.stripe.com/dRmfZg2UQ4Xo3CZ9CW0VO0Z" target="_null" class="BOOK_OPT BOOK_TH">
+                                    <h2>TEACHING TABLE</h2>
+                                </a> 
+                                <hr>
+                                <a href="https://book.stripe.com/7sY7sK67289A3CZeXg0VO0Y" target="_null" class="BOOK_OPT BOOK_OP">
+                                    <h2>OPEN PLAY</h2>
+                                </a>
+                            </div>  
+                        </div>
+
+                        <!--<div class="eventB eventB_last" id="eventB_50">
+                            <div class="DAYB" id="DAYB_2">
+                                <h1>01</h1>
+                                <h2>MAR / SUN</h2>
+                            </div> 
+                            <div class="INFOB" id="INFOB_2">
+                                <div class="TITLEB" id="TITLEB_50">
+                                    <h2>MJP 50</h2>
+                                </div>
+                                <div class="WHENB">
+                                    <p>07-09PM: <span class="TH">TEACHING TABLE</span></p>
+                                    <p>07-09PM: <span class="OP">OPEN PLAY</span></p>
+                                </div>
+                                <div class="WHEREB" id="WHEREB_50">
+                                    <p><a href="https://www.instagram.com/thecoconutclubsg" target="_null">@thecoconutclubsg</a> <br>269 Beach Rd, Singapore 199546.</p>
+                                </div>  
+                            </div>
+                            <div class="BOOKB" id="BOOKB_2">
+                                <h2>BOOK: $40</h2>
+                            </div>
+                            <div class="BOOKING_OPTIONS" id="BOOK_OPT_2">
+                                <a href="https://book.stripe.com/bJe7sKdzu9dE5L72au0VO10" target="_null" class="BOOK_OPT BOOK_TH">
+                                    <h2>TEACHING TABLE</h2>
+                                </a> 
+                                <hr>
+                                <a href="https://book.stripe.com/7sY8wO1QMgG68XjeXg0VO11" target="_null" class="BOOK_OPT BOOK_OP">
+                                    <h2>OPEN PLAY</h2>
+                                </a>
+                            </div>  
+                        </div>-->
+
+                    </div> <!-- EVENTS -->
+                </div> <!-- EVENTS PADDING -->
+
+
+
+
+                <!-- ARCHIVE -->
+
+
+                <a href="#ARCHIVE" id="ARCHIVE_BTN">
+                    <p>PAST EVENTS <span class="arial">↴</span></p>
+                </a>
+            </div>   
+
+            
+                <div id="ARCHIVE">
+
+                    <!--<div id="scroll">
+                        <p>scroll<span class="arrow">&rarr;</span></p>
+                    </div>-->
+                    <div id="archive_EVENTS">
+
+                        <div class="arch_EVENT" id="arch_first">
+                            <div class="arch_DATE"> 
+                                <h2>07 FEBRUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 46</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaagallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=247316651d8a4c36" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>24 JANUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 45</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/sargentsdaughters" target="_null">@sargentsdaughters</a> <br>370 Broadway, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=1e7a96479d2b433f" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>18 JANUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 44</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>04-06:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>04-06:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=r4RPRqHCTqCs84B5yAPVcA" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_4">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>14 DECEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 43</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>04:30-08:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=76e6ff6784d94824" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>10 DECEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 42</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/pioneerworks" target="_null">@pioneerworks</a> <br>159 Pioneer St, Brooklyn, NY 11231.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/6DES2X4uXv0pmYyfSI1cD3?si=b5449718d9d7470b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>22 NOVEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 41</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaagallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/4NzKFIjPHnw4IkpYekKR5U?si=9de780659f2a41ba" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>12 NOVEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 39</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/4NzKFIjPHnw4IkpYekKR5U?si=71073a8d0ce04756" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>08 NOVEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 38</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-10:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-10:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/smackmellon" target="_null">@smackmellon</a> <br>92 Plymouth St, Brooklyn, NY 11201.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/4NzKFIjPHnw4IkpYekKR5U?si=26ac881e25b2463d" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>13 OCTOBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 36</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/thephotographersgallery" target="_null">@thephotographersgallery</a> <br>16-18 Ramillies St, London W1F 7LW, UK.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/7fKsjBV1PLvGnbqomaMAws?si=cnfYil05SZWv5090aemoGg&pi=hOXZjRbzSn2nn" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>12 OCTOBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 35</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>04-07PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>04-07PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=963d07b3265b46db" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_4">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>08 OCTOBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 37</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>                                 
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=462d4888e7824174" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_44">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>23 SEPTEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 33</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=462d4888e7824174" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>19 SEPTEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 32</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/charlesmoffettgallery" target="_null">@charlesmoffettgallery</a> <br>394 Broadway, 2nd Floor, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=462d4888e7824174" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>03 SEPTEMBER 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 30</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="open.spotify.com/playlist/5AcxsTTWVoqQR532jsZ5Xo?pi=YbVNgDqdQ-6nU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>20 AUGUST 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 29</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="open.spotify.com/playlist/5AcxsTTWVoqQR532jsZ5Xo?pi=YbVNgDqdQ-6nU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>30 JULY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 28</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="open.spotify.com/playlist/5AcxsTTWVoqQR532jsZ5Xo?pi=YbVNgDqdQ-6nU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>25 JULY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 27</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/companygallery" target="_null">@companygallery</a> <br>145 Elizabeth St, New York, NY 10012.</p>  
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/04jOzOtOL7fg92EqjcKHhf?si=Tgh3heSkSwuS1YkjBwpe9g&pi=u0w5Rf22T8uO3" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>13 JULY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 26</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>11AM-03PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>11AM-03PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/communenyc" target="_null">@communenyc</a> <br>415 Classon Ave, Brooklyn, NY 11238.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5GjYSEZfZpw5N0HMEeMLbN?si=biPX5-UdS4mk6W5smxJqCQ&pi=0aDMSI2NTtCot" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>08 JULY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 25</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/yaleclubnyc/" target="_null">@yaleclubnyc</a> <br>50 Vanderbilt Ave, New York, NY 10017.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/7ijCNLBlffShoZnfajR9Xf?pi=Lf6lCNfQTMK-0" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_5">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>07 JULY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 24</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/7ijCNLBlffShoZnfajR9Xf?pi=Lf6lCNfQTMK-0" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_4">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>25 JUNE 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 23</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/7ha4cWXXilI8x86A0x8XKv?si=NX6wK6rcTGu59xbNyvIDGQ&pi=EcV2s4MMS9aO_" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>30 MAY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 21</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07PM-LATE: <span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><span class="OP">@ SECRET LOCATION</span> <br>--- ----- --, --- ----, -- -----.</p>
+                            </div>      
+                            <div class="arch_SPOTIFY_nolink" id="arch_SPOTIFY_1">
+                                <h2>LIVE DJ-SET</h2>
+                            </div>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>14 MAY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 20</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/7ha4cWXXilI8x86A0x8XKv?si=2ee757ea28e2473c" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>10 MAY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 19</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07PM-LATE: <span class="TH">TEACHING TABLE</span></p>
+                                <p>07PM-LATE: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaa</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/6bizBbnSwYWtHq5U4RTJ6b?pi=bWif4WisTPGPW" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>25 APRIL 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 18</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/communenyc" target="_null">@communenyc</a> <br>415 Classon Ave, Brooklyn, NY 11238.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/6U7R7jSwIvvZIAgj24OO4f?pi=aeA9_YqbS8KOp" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>16 APRIL 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 17</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                                <p>NO TEACHING TABLE</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5GjYSEZfZpw5N0HMEeMLbN?si=60fca8ad77634e3b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>11 APRIL 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 16</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/smackmellon" target="_null">@smackmellon</a> <br>92 Plymouth St, Brooklyn, NY 11201.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5GjYSEZfZpw5N0HMEeMLbN?si=60fca8ad77634e3b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>07 MARCH 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 15</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/faurschou_" target="_null">@faurschou</a> <br>148 Green St, Brooklyn, NY 11222.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5fwNxxkpxZ1TQm8nfDwlRl?si=568fca43058c4d2b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>21 FEBRUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 13</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaagallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/6vKdBOveEQjfJaiuwKJZ1e?si=ed8105bb8a6c4d06" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>06 FEBRUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 12</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06:30-07:30PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>06:30-07:30PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/macaonyc/" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5lS1SK3Wty5bMJAdQZosQC?pi=gPVjzOwDR6KPS" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>17 JANUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 10</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/candicemadey_gallery/?hl=en" target="_null">@Candicemadey_gallery</a> <br>1 Rivington St, New York, NY 10002.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5hjUYQbbOjd7u5jVUxySdn?si=c3289fe3d9334d96" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>09 JANUARY 2025</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 9</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>08-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/studioashby/?hl=en" target="_null">@Studioashby</a><br>23 Caxton St, LONDON, SW1H 0PY, UK.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/5hjUYQbbOjd7u5jVUxySdn?si=c3289fe3d9334d96" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>13 DECEMBER 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 8</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>08PM-12AM: <span class="OP">OPEN PLAY</span><br>NO TEACHING HOUR</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/superette.best.quality.vintage/" target="_null">@Superette</a> <br>133 East Broadway, New York, NY 10002.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/1qAevNvPXxRIzCat4zlgaU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>24 NOVEMBER 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 7</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>02-03PM: <span class="TH">TEACHING HOUR</span><br>02-06PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/99canal6fl/" target="_null">@99canal6fl</a> <br>99 Canal Street, New York, NY 10002.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/2QZpXoBjGqNiQglZLhZyKc?si=562447f2f3904f22" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>10 NOVEMBER 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 6</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>02-03PM: <span class="TH">TEACHING HOUR</span><br>02-06PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/99canal6fl/" target="_null">@99canal6fl</a> <br>99 Canal Street, New York, NY 10002.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/6I38AM0YxOj6h5Uaw2mXhE?si=818a5541b6dd42d3" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>25 OCTOBER 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 5</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                                <br>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/theagrantdesign/" target="_null">@Theagrantdesign</a> <br>126-A Front st. Brooklyn, NY 11201.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/01L3szKOzTOwZvPYpjrPlX?si=b18652d2c7ef4c7b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>11 OCT 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 4</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/gaagallery/" target="_null">@GaaGallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/0v7ajscBhP5y7rjOz7J1OK?si=qq39gpWwTH23_wTOFPR9Fw&pi=u-k28-h76PSuCt" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2></a>
+                            </a>
+                        </div>
+
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>22 SEPT 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>MJP 3</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>02-03PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>03-06PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/99canal6fl/" target="_null">@99canal6fl</a> <br>99 Canal Street
+                                    New York, NY 10002.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/1fpCkR7VgIIMA1rvwqEk6o?si=4rqR0dzORmmImI9Dk0Eb2g&pi=u-3YTGFJulTOWw" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                                <h2>[SPOTIFY PLAYLIST]</h2></a>
+                            </a>
+                        </div>
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>22 JULY 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>SOFT SERVE 1</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06-07PM: <span class="TH">TEACHING HOUR</span></p>
+                                <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/superfinedumbo/" target="_null">@Superfinenyc</a> <br>126 Front st. Brooklyn, NY 11201.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/1fpCkR7VgIIMA1rvwqEk6o?si=4rqR0dzORmmImI9Dk0Eb2g&pi=u-3YTGFJulTOWw" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                                <h2>[SPOTIFY PLAYLIST]</h2></a>
+                            </a>
+                        </div>  
+
+                        <div class="arch_EVENT">
+                            <div class="arch_DATE"> 
+                                <h2>09 SEPTEMBER 2024</h2> 
+                            </div>
+                            <div class="arch_TITLE">
+                                <p>SOFT SERVE 2</p>
+                            </div>
+                            <div class="arch_WHEN">
+                                <p>06-09PM: <span class="OP">OPEN PLAY</span><br>&nbsp;</p>
+                            </div>
+                            <div class="arch_WHERE">    
+                                <p><a href="https://www.instagram.com/superfinedumbo/" target="_null">@Superfinenyc</a> <br>126 Front st. Brooklyn, NY 11201.</p>
+                            </div>      
+                            <a href="https://open.spotify.com/playlist/6UK81IJbUZwJWbDS4LRs06?si=02IC43-oThqQSue1IWdaOg&pi=u-ZuaT2lkoQrit" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                                <h2>[SPOTIFY PLAYLIST]</h2></a>
+                            </a>
+                        </div>
+
+
+                    </div> <!-- archive_EVENTS -->   
+
+                    <div id="footer">
+                        <p>MAHJONG PALACE &copy; 2025</p>
+                    </div>
+                   
+                </div> <!-- ARCHIVE -->
+                
+           
+
+        </div> <!-- RIGHT / LEFT -->
+
+
+    </div>   <!-- ALL_DESK -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MOBILE -->
+
+
+
+
+
+
+
+
+    <div id="ALL_MOBILE">
+        <div id="TOP_mob">
+            <div id="LOGO_mob">
+                <a href="#"><img src="vector/MjPl.svg"></a>
+            </div>  
+            <div class="scroll_txt">
+                <div class="scroll_txt_txt">
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>           
+                </div>
+                <div class="scroll_txt_txt">
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>
+                    <div class="learn">LEARN MAHJONG</div>
+                    <div class="play">PLAY MAHJONG</div>           
+                </div>
+            </div> <!-- scroll txt -->
+        </div>  <!-- TOP MOB -->
+
+        <!--<div id="ANNOUNCE_mob">
+            <p>“Mahjong and food bring people together”<br>-Madam Dolly Goon, Dowager Empress of Mahjong Palace.</p>
+        </div>-->
+
+        <div id="mobile-navmenu">
+            <div id="about-link-mob">
+                <a>[ABOUT]</a>
+            </div>
+            <div id="leaderboard-link-mob">
+                <a>[LEADERBOARD]</a>
+            </div> 
+        </div>
+
+        <div id="about-text-mob" style="display: none;">
+            <div id="close-about-mob">✕</div>
+            <div class="about-inner">
+                <div class="about-text_section">
+                    <div id="STORY">
+                        <div class="about-header"><h2>OUR STORY</h2></div>
+                        <p><i>“I grew up playing mahjong in Singapore, in a home ruled by my formidable grandmother, Dolly. But it was never just about the game. My memories are of balmy evenings, the air thick with the scent of tropical fruit from the garden, mingling with the rich, spicy aromas of Dolly’s Peranakan cooking. Laughter and lively chatter spilled through the house as friends gathered around the mahjong table, the rhythmic clatter of tiles a steady backdrop to gossip shared and stories retold. It was a feeling as much as a memory—of warmth, of belonging, of time slowing down in the company of others.
+                        <br>Now, in NYC, a place I have come to call home, I want to recreate that same magic of bringing people together through mahjong.”</i>
+                        <br><br>-Subhas Kim Kandasamy, Founder of Mahjong Palace.</p> 
+                    </div>
+                    <div id="TTOP">
+                        <div class="about-header"><h2>ABOUT MJP</h2></div>
+                        <p>Founded in NYC in September 2024, Mahjong Palace (MJP) is a social mahjong club that reimagines the mahjong experience. We host engaging  teaching and playing sessions at thoughtfully  selected venues - from art galleries and cultural spaces to restaurants and members-only clubs. 
+                        <br><br>Our booking system is simple and straightforward - tickets can be purchased directly on our webstore and guarantee a seat at a table. A drinks bar and a smorgasboard of Asian snacks and appetizers is offered at each event, along with a curated music playlist that is available for download after the session on Spotify.
+                        <br><br>Our events are designed to cater to mahjong players of all levels.
+                        <br><br>We teach and play Hong Kong–style mahjong, the most widely played version of the game worldwide.
+                        <br><br><br><span class="TH">TEACHING TABLE:</span> Perfect for absolute beginners, Teaching Tables are led by experienced teachers. New players are welcome to book sessions at Teaching Tables as many times as needed to feel confident with the rules and structure of the game.
+                        <br><br>
+                        <span class="OP">OPEN PLAY:</span> Players who are at least comfortable playing Chicken Hand independently are welcome to book a seat at an Open Play Table. We aim to  group participants with others at a similar skill level to ensure a balanced and enjoyable game.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+
+        <div id="leaderboard-text-mob" style="display: none;">
+            <div id="close-leaderboard-mob">✕</div>
+            <div class="leaderboard-inner">
+                <div class="leaderboard-text_section">
+                    <div id="LEADERBOARD">
+                        <div class="leaderboard-top">
+                            <div id="leaderboard-title"><h1>LEADERBOARD</h1></div>
+                            <div id="leaderboard-sections">
+                                <div id="leaderboard-sections-rank"><p>RANK</p></div>
+                                <div id="leaderboard-sections-player"><p>PLAYER</p></div>
+                                <div id="leaderboard-sections-points"><p>POINTS</p></div>
+                            </div>  
+                        </div>        
+                        <div class="leaderboard-podium rank-1">
+                            <div class="podium-number"><h1>1</h1></div>
+                            <div class="podium-person"><h2>James Weinhoff</h2><p class="leaderboard-date">@ MJP 32 - 19 SEPT 2025</p></div>
+                            <div class="podium-points"><h1>14</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-1">
+                            <div class="podium-number"><h1>1</h1></div>
+                            <div class="podium-person"><h2>Lois Aronow</h2><p class="leaderboard-date">@ MJP 42 - 10 DEC 2025</p></div>
+                            <div class="podium-points"><h1>14</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-2">
+                            <div class="podium-number"><h1>2</h1></div>
+                            <div class="podium-person"><h2>Min Liu</h2><p class="leaderboard-date">@ MJP 33 - 23 SEPT 2025</p></div>
+                            <div class="podium-points"><h1>13</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-3">
+                            <div class="podium-number"><h1>3</h1></div>
+                            <div class="podium-person"><h2>Min Liu</h2><p class="leaderboard-date">@ MJP 30 - 03 SEPT 2025</p></div>
+                            <div class="podium-points"><h1>12</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>4</h1></div>
+                            <div class="podium-person"><h2>Mati Gibbs</h2><p class="leaderboard-date">@ MJP 13 - 21 FEB 2025</p></div>
+                            <div class="podium-points"><h1>11</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>4</h1></div>
+                            <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 38 - 08 NOV 2025</p></div>
+                            <div class="podium-points"><h1>11</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>4</h1></div>
+                            <div class="podium-person"><h2>Julia Mattox</h2><p class="leaderboard-date">@ MJP X VIRGINIA CLUB - 19 NOV 2025</p></div>
+                            <div class="podium-points"><h1>11</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>4</h1></div>
+                            <div class="podium-person"><h2>Laurin Liu</h2><p class="leaderboard-date">@ MJP 39 - 12 NOV 2025</p></div>
+                            <div class="podium-points"><h1>11</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>4</h1></div>
+                            <div class="podium-person"><h2>Nicole Iwata</h2><p class="leaderboard-date">@ MJP 41 - 22 NOV 2025</p></div>
+                            <div class="podium-points"><h1>11</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Charles Guerrero</h2><p class="leaderboard-date">@ MJP 23 - 25 JUN 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Ellen Korner</h2><p class="leaderboard-date">@ MJP 18 - 25 APR 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 38 - 08 NOV 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 26 - 13 JUL 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Florian Konigsberger</h2><p class="leaderboard-date">@ MJP 21 - 30 MAY 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Helena Stefanowicz</h2><p class="leaderboard-date">@ MJP 37 - 08 OCT 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Martin Andersson</h2><p class="leaderboard-date">@ MJP 28 - 30 JULY 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div class="leaderboard-podium rank-rest">
+                            <div class="podium-number"><h1>5</h1></div>
+                            <div class="podium-person"><h2>Ra Frank</h2><p class="leaderboard-date">@ MJP 18 - 25 APR 2025</p></div>
+                            <div class="podium-points"><h1>10</h1></div>
+                        </div>
+                        <div id="leaderboard-disclaimer"><p>NOTE: only players scoring 10+ points are shown on the Leaderboard.</p></div>
+                    </div>
+                </div>    
+            </div> 
+        </div>
+
+        <div id="PIC_mob">
+            <img id="random-image_mob" class="cover_img_mob" src="">
+        </div>
+
+        <div id="UPCOMING_mob">
+            <p>UPCOMING EVENTS <span class="arial">↴</span></p>
+        </div> 
+
+        <div id="EVENTS_mob">       
+                          
+
+            <!--<div class="EVENT_mob" id="DATE_mob_1">
+                <div class="DATE_mob">
+                    <h1>25</h1>
+                    <h2>JUL / FRI</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 27</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/companygallery" target="_null">@companygallery</a> <br>145 Elizabeth St, New York, NY 10012.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_1">
+                    <h2>BOOK: $40</h2>
+                </div>
+                <div class="BOOKING_OPTIONS_mob" id="BOOK_OPT_mob_1">
+                    <a href="https://book.stripe.com/eVqcN4fHCdtUa1ncP80VO0z" target="_null" class="BOOK_OPT_mob BOOK_TH_mob">
+                        <h2>TEACHING TABLE</h2>
+                    </a> 
+                    <hr>
+                    <a href="https://book.stripe.com/3cIcN48fa3Tk3CZ6qK0VO0y" target="_null" class="BOOK_OPT_mob BOOK_OP_mob">
+                        <h2>OPEN PLAY</h2>
+                    </a>
+                </div>
+            </div>-->
+
+            <!-- <div class="EVENT_mob" id="DATE_mob_3">
+                <div class="DATE_mob">
+                    <h1>20</h1>
+                    <h2>AUG / WED</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 29</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_3">
+                    <h2>BOOK: $40</h2>
+                </div>
+                <div class="BOOKING_OPTIONS_mob" id="BOOK_OPT_mob_3">
+                    <a href="https://buy.stripe.com/cNi28qbrm89Ac9veXg0VO0C" target="_null" class="BOOK_OPT_mob BOOK_TH_mob">
+                        <h2>TEACHING TABLE</h2>
+                    </a> 
+                    <hr>
+                    <a href="https://book.stripe.com/aFaaEWbrmfC2c9v9CW0VO0B" target="_null" class="BOOK_OPT_mob BOOK_OP_mob">
+                        <h2>OPEN PLAY</h2>
+                    </a>
+                </div>
+            </div> -->
+
+            <!--<div class="EVENT_mob" id="DATE_mob_1">
+                <div class="DATE_mob">
+                    <h1>03</h1>
+                    <h2>SEPT / WED</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 30</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>
+                <a class="BOOK_mob" id="BOOK_mob_1" href="https://book.stripe.com/8x2bJ067275wa1naH00VO0D" target="_null">
+                    <h2>BOOK: $40</h2>
+                </a>
+            </div>-->
+
+            <!--<div class="EVENT_mob" id="DATE_mob_2">
+                <div class="DATE_mob">
+                    <h1>19</h1>
+                    <h2>SEPT / FRI</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 32</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/charlesmoffettgallery" target="_null">@charlesmoffettgallery</a> <br>394 Broadway, 2nd Floor, New York, NY 10013.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_2">
+                    <h2>BOOK: $40</h2>
+                </div>
+                <div class="BOOKING_OPTIONS_mob" id="BOOK_OPT_mob_2">
+                    <a href="https://book.stripe.com/eVq7sK0MIfC2gpL02m0VO0F" target="_null" class="BOOK_OPT_mob BOOK_TH_mob">
+                        <h2>TEACHING TABLE</h2>
+                    </a> 
+                    <hr>
+                    <a href="https://book.stripe.com/14AdR8anidtUddzbL40VO0E" target="_null" class="BOOK_OPT_mob BOOK_OP_mob">
+                        <h2>OPEN PLAY</h2>
+                    </a>
+                </div>
+            </div>-->
+
+
+            <!--<div class="EVENT_mob" id="DATE_mob_44">
+                <div class="DATE_mob">
+                    <h1>08</h1>
+                    <h2>OCT / WED</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 37</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>
+                <a class="BOOK_mob" id="BOOK_mob_44" href="https://book.stripe.com/9B6dR8eDygG62yV3ey0VO0K" target="_null">
+                    <h2>BOOK: $40</h2>
+                </a>
+            </div>-->
+
+            <!--<div class="EVENT_mob" id="DATE_mob_1">
+                <div class="DATE_mob">
+                    <h1>13</h1>
+                    <h2>OCT / MON</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 36</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/thephotographersgallery" target="_null">@thephotographersgallery</a> <br>16-18 Ramillies St, London W1F 7LW, UK.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_1">
+                    <h2>BOOK: £50</h2>
+                </div>
+                <div class="BOOKING_OPTIONS_mob" id="BOOK_OPT_mob_1">
+                    <a href="https://book.stripe.com/fZu9ASanicpQa1n8yS0VO0I" target="_null" class="BOOK_OPT_mob BOOK_TH_mob">
+                        <h2>TEACHING TABLE</h2>
+                    </a> 
+                    <hr>
+                    <a href="https://book.stripe.com/6oU14m672blMb5rg1k0VO0H" target="_null" class="BOOK_OPT_mob BOOK_OP_mob">
+                        <h2>OPEN PLAY</h2>
+                    </a>
+                </div>
+            </div>-->
+
+            <div class="EVENT_mob" id="DATE_mob_47">
+                <div class="DATE_mob">
+                    <h1>15</h1>
+                    <h2>FEB / SUN</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 47</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>04-07PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>04-07PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_4">
+                    <h2>PRIVATE EVENT</h2>
+                </div>
+            </div>
+
+            <div class="EVENT_mob" id="DATE_mob_48">
+                <div class="DATE_mob">
+                    <h1>18</h1>
+                    <h2>FEB / WED</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 48</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>07-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>
+                <a class="BOOK_mob" id="BOOK_mob_3" href="https://book.stripe.com/5kQ00i52YgG6c9vbL40VO0X" target="_null">
+                    <h2>BOOK: $40</h2>
+                </a>
+            </div>
+
+            <div class="EVENT_mob" id="DATE_mob_49">
+                <div class="DATE_mob">
+                    <h1>22</h1>
+                    <h2>FEB / SUN</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 49</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>03-06PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>03-06PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/nineorchard" target="_null">@nineorchard</a> <br>9 Orchard St, New York, NY 10002.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_1">
+                    <h2>BOOK: $40</h2>
+                </div>
+                <div class="BOOKING_OPTIONS_mob" id="BOOK_OPT_mob_1">
+                    <a href="https://book.stripe.com/dRmfZg2UQ4Xo3CZ9CW0VO0Z" target="_null" class="BOOK_OPT_mob BOOK_TH_mob">
+                        <h2>TEACHING TABLE</h2>
+                    </a> 
+                    <hr>
+                    <a href="https://book.stripe.com/7sY7sK67289A3CZeXg0VO0Y" target="_null" class="BOOK_OPT_mob BOOK_OP_mob">
+                        <h2>OPEN PLAY</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="EVENT_mob" id="DATE_mob_50">
+                <div class="DATE_mob">
+                    <h1>01</h1>
+                    <h2>MAR / SUN</h2>
+                </div>
+                <div class="TITLE_mob">
+                    <p>MJP 50</p>
+                </div>   
+                <div class="WHEN_mob">
+                    <p>07-09PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>07-09PM: <span class="OP">OPEN PLAY</span></p>
+                </div> 
+                <div class="WHERE_mob">
+                    <p><a href="https://www.instagram.com/thecoconutclubsg" target="_null">@thecoconutclubsg</a> <br>269 Beach Rd, Singapore 199546.</p>
+                </div>
+                <div class="BOOK_mob" id="BOOK_mob_2">
+                    <h2>BOOK: $40</h2>
+                </div>
+                <div class="BOOKING_OPTIONS_mob" id="BOOK_OPT_mob_2">
+                    <a href="https://book.stripe.com/bJe7sKdzu9dE5L72au0VO10" target="_null" class="BOOK_OPT_mob BOOK_TH_mob">
+                        <h2>TEACHING TABLE</h2>
+                    </a> 
+                    <hr>
+                    <a href="https://book.stripe.com/7sY8wO1QMgG68XjeXg0VO11" target="_null" class="BOOK_OPT_mob BOOK_OP_mob">
+                        <h2>OPEN PLAY</h2>
+                    </a>
+                </div>
+            </div>
+
+        </div> <!-- EVENTS MOB -->
+
+
+        <a href="#ARCHIVE" id="ARCHIVE_BTN_MOB">
+            <p>PAST EVENTS <span class="arial">↴</span></p>
+        </a>
+
+        <div id="ARCHIVE_MOB">
+
+            <div class="arch_EVENT" id="arch_EVENT_first_mob">
+                <div class="arch_DATE"> 
+                    <h2>07 FEBRUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 46</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaagallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=247316651d8a4c36" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>24 JANUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 45</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/sargentsdaughters" target="_null">@sargentsdaughters</a> <br>370 Broadway, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=1e7a96479d2b433f" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>18 JANUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 44</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>04-06:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>04-06:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=r4RPRqHCTqCs84B5yAPVcA" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_4">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>14 DECEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 43</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>04:30-08:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/0TyE8hfy6wiXa3jhoMo8s8?si=76e6ff6784d94824" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>10 DECEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 42</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/pioneerworks" target="_null">@pioneerworks</a> <br>159 Pioneer St, Brooklyn, NY 11231.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/6DES2X4uXv0pmYyfSI1cD3?si=b5449718d9d7470b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>22 NOVEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 41</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaagallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/4NzKFIjPHnw4IkpYekKR5U?si=9de780659f2a41ba" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>12 NOVEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 39</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/4NzKFIjPHnw4IkpYekKR5U?si=71073a8d0ce04756" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>08 NOVEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 38</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-10:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-10:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/smackmellon" target="_null">@smackmellon</a> <br>92 Plymouth St, Brooklyn, NY 11201.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/4NzKFIjPHnw4IkpYekKR5U?si=26ac881e25b2463d" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>13 OCTOBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 36</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/thephotographersgallery" target="_null">@thephotographersgallery</a> <br>16-18 Ramillies St, London W1F 7LW, UK.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/7fKsjBV1PLvGnbqomaMAws?si=cnfYil05SZWv5090aemoGg&pi=hOXZjRbzSn2nn" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>12 OCTOBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 35</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>04-07PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>04-07PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=963d07b3265b46db" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_4">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>08 OCTOBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 37</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>                                 
+                </div>      
+                <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=462d4888e7824174" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_44">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>23 SEPTEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 33</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=462d4888e7824174" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>19 SEPTEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 32</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/charlesmoffettgallery" target="_null">@charlesmoffettgallery</a> <br>394 Broadway, 2nd Floor, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/2yqh0O0KVgiHlPdVS04zC7?si=462d4888e7824174" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>03 SEPTEMBER 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 30</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="open.spotify.com/playlist/5AcxsTTWVoqQR532jsZ5Xo?pi=YbVNgDqdQ-6nU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>20 AUGUST 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 29</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="open.spotify.com/playlist/5AcxsTTWVoqQR532jsZ5Xo?pi=YbVNgDqdQ-6nU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>30 JULY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 28</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="open.spotify.com/playlist/5AcxsTTWVoqQR532jsZ5Xo?pi=YbVNgDqdQ-6nU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>25 JULY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 27</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/companygallery" target="_null">@companygallery</a> <br>145 Elizabeth St, New York, NY 10012.</p>  
+                </div>      
+                <a href="https://open.spotify.com/playlist/04jOzOtOL7fg92EqjcKHhf?si=Tgh3heSkSwuS1YkjBwpe9g&pi=u0w5Rf22T8uO3" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>13 JULY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 26</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>11AM-03PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>11AM-03PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/communenyc" target="_null">@communenyc</a> <br>415 Classon Ave, Brooklyn, NY 11238.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5GjYSEZfZpw5N0HMEeMLbN?si=biPX5-UdS4mk6W5smxJqCQ&pi=0aDMSI2NTtCot" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>08 JULY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 25</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/yaleclubnyc/" target="_null">@yaleclubnyc</a> <br>50 Vanderbilt Ave, New York, NY 10017.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/7ijCNLBlffShoZnfajR9Xf?pi=Lf6lCNfQTMK-0" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_5">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT" >
+                <div class="arch_DATE"> 
+                    <h2>07 JULY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 24</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/theroofgardens" target="_null">@theroofgardens</a> <br>99 Kensington High St, London W8 5SA, UK.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/7ijCNLBlffShoZnfajR9Xf?pi=Lf6lCNfQTMK-0" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_4">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>25 JUNE 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 23</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-09:30PM:<span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/7ha4cWXXilI8x86A0x8XKv?si=NX6wK6rcTGu59xbNyvIDGQ&pi=EcV2s4MMS9aO_" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>30 MAY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 21</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07PM-LATE: <span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><span class="OP">@ SECRET LOCATION</span> <br>--- ----- --, --- ----, -- -----.</p>
+                </div>      
+                <div class="arch_SPOTIFY_nolink" id="arch_SPOTIFY_1">
+                    <h2>LIVE DJ-SET</h2>
+                </div>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>14 MAY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 20</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/7ha4cWXXilI8x86A0x8XKv?si=2ee757ea28e2473c" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>10 MAY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 19</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07PM-LATE: <span class="TH">TEACHING TABLE</span></p>
+                    <p>07PM-LATE: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaa</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/6bizBbnSwYWtHq5U4RTJ6b?pi=bWif4WisTPGPW" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>25 APRIL 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 18</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-09:30PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>06:30-09:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/communenyc" target="_null">@communenyc</a> <br>415 Classon Ave, Brooklyn, NY 11238.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/6U7R7jSwIvvZIAgj24OO4f?pi=aeA9_YqbS8KOp" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>16 APRIL 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 17</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                    <p>NO TEACHING TABLE</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5GjYSEZfZpw5N0HMEeMLbN?si=60fca8ad77634e3b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>11 APRIL 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 16</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/smackmellon" target="_null">@smackmellon</a> <br>92 Plymouth St, Brooklyn, NY 11201.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5GjYSEZfZpw5N0HMEeMLbN?si=60fca8ad77634e3b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>07 MARCH 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 15</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-10PM: <span class="TH">TEACHING TABLE</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/faurschou_" target="_null">@faurschou</a> <br>148 Green St, Brooklyn, NY 11222.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5fwNxxkpxZ1TQm8nfDwlRl?si=568fca43058c4d2b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>21 FEBRUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 13</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/gaagallery" target="_null">@gaagallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/6vKdBOveEQjfJaiuwKJZ1e?si=ed8105bb8a6c4d06" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>06 FEBRUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 12</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06:30-07:30PM: <span class="TH">TEACHING HOUR</span></p>
+                    <p>06:30-07:30PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/macaonyc/" target="_null">@macaonyc</a> <br>311 Church St, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5lS1SK3Wty5bMJAdQZosQC?pi=gPVjzOwDR6KPS" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>17 JANUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 10</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/candicemadey_gallery/?hl=en" target="_null">@Candicemadey_gallery</a> <br>1 Rivington St, New York, NY 10002.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5hjUYQbbOjd7u5jVUxySdn?si=c3289fe3d9334d96" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>09 JANUARY 2025</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 9</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                    <p>08-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/studioashby/?hl=en" target="_null">@Studioashby</a><br>23 Caxton St, LONDON, SW1H 0PY, UK.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/5hjUYQbbOjd7u5jVUxySdn?si=c3289fe3d9334d96" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>13 DECEMBER 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 8</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>08PM-12AM: <span class="OP">OPEN PLAY</span><br>NO TEACHING HOUR</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/superette.best.quality.vintage/" target="_null">@Superette</a> <br>133 East Broadway, New York, NY 10002.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/1qAevNvPXxRIzCat4zlgaU" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>24 NOVEMBER 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 7</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>02-03PM: <span class="TH">TEACHING HOUR</span><br>02-06PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/99canal6fl/" target="_null">@99canal6fl</a> <br>99 Canal Street, New York, NY 10002.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/2QZpXoBjGqNiQglZLhZyKc?si=562447f2f3904f22" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>10 NOVEMBER 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 6</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>02-03PM: <span class="TH">TEACHING HOUR</span><br>02-06PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/99canal6fl/" target="_null">@99canal6fl</a> <br>99 Canal Street, New York, NY 10002.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/1xVptQ5neUsZZqdhEVLpAI?si=A1w0TzkkQcWV4UYIjMmaDQ&pi=u-uDjopHQISQek&nd=1&dlsi=b979c71bcde8461c" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>25 OCTOBER 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 5</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                    <br>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/theagrantdesign/" target="_null">@Theagrantdesign</a> <br>126-A Front st. Brooklyn, NY 11201.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/01L3szKOzTOwZvPYpjrPlX?si=b18652d2c7ef4c7b" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>11 OCT 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 4</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>07-08PM: <span class="TH">TEACHING HOUR</span></p>
+                    <p>07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/gaagallery/" target="_null">@GaaGallery</a> <br>4 Cortlandt Alley, New York, NY 10013.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/0v7ajscBhP5y7rjOz7J1OK?si=qq39gpWwTH23_wTOFPR9Fw&pi=u-k28-h76PSuCt" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2></a>
+                </a>
+            </div>            
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>22 SEPT 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>MJP 3</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>02-03PM: <span class="TH">TEACHING HOUR</span><br> 03-06PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/99canal6fl/" target="_null">@99canal6fl</a> <br>99 Canal Street
+                    New York, NY 10002.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/4mjcai5ktlY5XBkQjFv79T?si=luUz_Jk7TB-y0fc_X9e9_Q&pi=u-BVpDyOoaTqa2&nd=1&dlsi=d8a407b804a44a8a" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_3">
+                    <h2>[SPOTIFY PLAYLIST]</h2></a>
+                </a>
+            </div>
+            
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>22 JULY 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>SOFT SERVE 1</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06-07PM: <span class="TH">TEACHING HOUR</span><br> 07-10PM: <span class="OP">OPEN PLAY</span></p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/superfinedumbo/" target="_null">@Superfinenyc</a> <br>126 Front st. Brooklyn, NY 11201.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/1fpCkR7VgIIMA1rvwqEk6o?si=4rqR0dzORmmImI9Dk0Eb2g&pi=u-3YTGFJulTOWw" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_2">
+                    <h2>[SPOTIFY PLAYLIST]</h2></a>
+                </a>
+            </div>
+
+            <div class="arch_EVENT">
+                <div class="arch_DATE"> 
+                    <h2>09 SEPTEMBER 2024</h2> 
+                </div>
+                <div class="arch_TITLE">
+                    <p>SOFT SERVE 2</p>
+                </div>
+                <div class="arch_WHEN">
+                    <p>06-09PM: <span class="OP">OPEN PLAY</span><br>&nbsp;</p>
+                </div>
+                <div class="arch_WHERE">    
+                    <p><a href="https://www.instagram.com/superfinedumbo/" target="_null">@Superfinenyc</a> <br>126 Front st. Brooklyn, NY 11201.</p>
+                </div>      
+                <a href="https://open.spotify.com/playlist/6UK81IJbUZwJWbDS4LRs06?si=02IC43-oThqQSue1IWdaOg&pi=u-ZuaT2lkoQrit" target="_null" class="arch_SPOTIFY" id="arch_SPOTIFY_1">
+                    <h2>[SPOTIFY PLAYLIST]</h2></a>
+                </a>
+            </div>
+        </div> <!-- ARCH_MOB --> 
+
+        <div id="footer_mob">
+            <a href="https://www.instagram.com/mahjongpalace/" target="_null">@mahjongpalace</a>
+            <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#109;&#097;&#104;&#106;&#111;&#110;&#103;&#112;&#097;&#108;&#097;&#099;&#101;&#046;&#110;&#101;&#116;" target="_blank">hello[at]&shy;mahjongpalace.net</a>
+            <p>MAHJONG PALACE &copy; 2025</p>
+        </div>
+
+    </div> <!-- ALL_MOBILE -->   
+
+</body>
+
+</html>
+
