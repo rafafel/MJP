@@ -1,31 +1,72 @@
-name: Promote scheduled-updates to live
+name: Promote scheduled-updates into live
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:
+  schedule:
+    # every 5 minutes (minimum GitHub allows). cron is UTC.
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: scheduled-updates-sync
+  cancel-in-progress: true
+
 jobs:
-  promote:
+  sync:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      # 1) Checkout LIVE repo (this repo) into workspace root
+      - name: Checkout live repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Configure git
+      # 2) Checkout SOURCE repo (scheduled-updates) into a subfolder
+      - name: Checkout scheduled-updates repo
+        uses: actions/checkout@v4
+        with:
+          repository: YOUR_OWNER_OR_ORG/scheduled-updates
+          ref: main
+          path: __source
+          # If scheduled-updates is private OR in a different org, create a PAT secret named SOURCE_REPO_TOKEN
+          token: ${{ secrets.SOURCE_REPO_TOKEN || github.token }}
+
+      # 3) Replace live repo contents with source contents (excluding git + this workflow file)
+      - name: Sync files into live repo
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
+          set -euo pipefail
+
+          rsync -a --delete \
+            --exclude ".git/" \
+            --exclude "__source/" \
+            --exclude ".github/workflows/scheduled-sync.yml" \
+            "__source/" "./"
+
+      # 4) Commit & push only if changes exist
+      - name: Commit and push changes (if any)
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Merge scheduled-updates into live
-        run: |
-          git fetch origin
-          git checkout live
-          git merge --no-ff origin/scheduled-updates -m "Scheduled merge"
-          git push origin live
+          git add -A
+
+          # Re-check after staging (in case only deletions/rsync noise)
+          if git diff --cached --quiet; then
+            echo "No staged changes."
+            exit 0
+          fi
+
+          git commit -m "Sync from scheduled-updates ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+          git push
